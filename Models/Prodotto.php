@@ -1,4 +1,7 @@
 <?php
+require_once __DIR__ . '/Categoria.php';
+require_once __DIR__ . '/../Traits/NameDesc.php';
+
 class Prodotto
 {
     use NameDesc;
@@ -11,11 +14,9 @@ class Prodotto
     {
         $this->nome = $nome;
         $this->descrizione = $descrizione;
-        $this->prezzo = $prezzo;
         $this->immagine = $immagine;
         $this->quantita = $quantita;
         $this->categoria = $categoria;
-
 
         if ($prezzo >= 0) {
             $this->prezzo = $prezzo;

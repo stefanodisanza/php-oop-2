@@ -1,0 +1,9 @@
+main{
+    background-color: rgb(250, 239, 80);
+    height: 100vh;
+}
+
+h1{
+    text-align: center;
+    padding: 50px;
+}
